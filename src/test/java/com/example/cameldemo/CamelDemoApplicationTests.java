@@ -20,8 +20,14 @@ public class CamelDemoApplicationTests {
 	@Autowired
 	TestRestTemplate testRestTemplate;
 
+
 	@Test
-	public void contextLoads() {
+	public void startIt() {
+		System.out.println();
+	}
+
+	@Test
+	public void contextLoads2() {
 		String string = testRestTemplate.getForObject("/", String.class);
 
 		RestTemplate restTemplate = new RestTemplate();
